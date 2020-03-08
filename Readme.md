@@ -1,8 +1,4 @@
----
-title: Portal2Search
----
-
-门户即推荐，搜索即服务（[Github](https://github.com/zhengzangw/Portal2Search)）
+<h2 align="center"> 门户即推荐，搜索即服务 </h2>
 
 - 减少页面加载一次
 - 减少推荐
