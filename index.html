@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Readme</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+display: block;
+}
+
+audio,
+canvas,
+video {
+display: inline-block;
+}
+
+audio:not([controls]) {
+display: none;
+height: 0;
+}
+
+[hidden],
+template {
+display: none;
+}
+
+
+html {
+font-family: sans-serif; 
+-ms-text-size-adjust: 100%; 
+-webkit-text-size-adjust: 100%; 
+}
+
+body {
+margin: 0;
+}
+
+
+a {
+background: transparent;
+}
+
+a:focus {
+outline: thin dotted;
+}
+
+a:active,
+a:hover {
+outline: 0;
+}
+
+
+h1 {
+font-size: 2em;
+margin: 0.67em 0;
+}
+
+abbr[title] {
+border-bottom: 1px dotted;
+}
+
+b,
+strong {
+font-weight: bold;
+}
+
+dfn {
+font-style: italic;
+}
+
+hr {
+-moz-box-sizing: content-box;
+box-sizing: content-box;
+height: 0;
+}
+
+mark {
+background: #ff0;
+color: #000;
+}
+
+code,
+kbd,
+pre,
+samp {
+font-family: monospace, serif;
+font-size: 1em;
+}
+
+pre {
+white-space: pre-wrap;
+}
+
+q {
+quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+small {
+font-size: 80%;
+}
+
+sub,
+sup {
+font-size: 75%;
+line-height: 0;
+position: relative;
+vertical-align: baseline;
+}
+sup {
+top: -0.5em;
+}
+sub {
+bottom: -0.25em;
+}
+
+
+img {
+border: 0;
+}
+
+svg:not(:root) {
+overflow: hidden;
+}
+
+
+figure {
+margin: 0;
+}
+
+
+fieldset {
+border: 1px solid #c0c0c0;
+margin: 0 2px;
+padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+border: 0; 
+padding: 0; 
+}
+
+button,
+input,
+select,
+textarea {
+font-family: inherit; 
+font-size: 100%; 
+margin: 0; 
+}
+
+button,
+input {
+line-height: normal;
+}
+
+button,
+select {
+text-transform: none;
+}
+
+button,
+html input[type="button"], 
+input[type="reset"],
+input[type="submit"] {
+-webkit-appearance: button; 
+cursor: pointer; 
+}
+
+button[disabled],
+html input[disabled] {
+cursor: default;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+box-sizing: border-box; 
+padding: 0; 
+}
+
+input[type="search"] {
+-webkit-appearance: textfield; 
+-moz-box-sizing: content-box;
+-webkit-box-sizing: content-box; 
+box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+-webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+border: 0;
+padding: 0;
+}
+
+textarea {
+overflow: auto; 
+vertical-align: top; 
+}
+
+
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+.go-top {
+position: fixed;
+bottom: 2em;
+right: 2em;
+text-decoration: none;
+background-color: #E0E0E0;
+font-size: 12px;
+padding: 1em;
+display: inline;
+}
+
+html,body{ margin: auto;
+padding-right: 1em;
+padding-left: 1em;
+max-width: 44em; color:black;}*:not('#mkdbuttons'){margin:0;padding:0}body{font:13.34px helvetica,arial,freesans,clean,sans-serif;-webkit-font-smoothing:subpixel-antialiased;line-height:1.4;padding:3px;background:#fff;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px}p{margin:1em 0}a{color:#4183c4;text-decoration:none}body{background-color:#fff;padding:30px;margin:15px;font-size:14px;line-height:1.6}body>*:first-child{margin-top:0!important}body>*:last-child{margin-bottom:0!important}@media screen{body{box-shadow:0 0 0 1px #cacaca,0 0 0 4px #eee}}h1,h2,h3,h4,h5,h6{margin:20px 0 10px;padding:0;font-weight:bold;-webkit-font-smoothing:subpixel-antialiased;cursor:text}h1{font-size:28px;color:#000}h2{font-size:24px;border-bottom:1px solid #ccc;color:#000}h3{font-size:18px;color:#333}h4{font-size:16px;color:#333}h5{font-size:14px;color:#333}h6{color:#777;font-size:14px}p,blockquote,table,pre{margin:15px 0}ul{padding-left:30px}ol{padding-left:30px}ol li ul:first-of-type{margin-top:0}hr{background:transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;border:0 none;color:#ccc;height:4px;padding:0}body>h2:first-child{margin-top:0;padding-top:0}body>h1:first-child{margin-top:0;padding-top:0}body>h1:first-child+h2{margin-top:0;padding-top:0}body>h3:first-child,body>h4:first-child,body>h5:first-child,body>h6:first-child{margin-top:0;padding-top:0}a:first-child h1,a:first-child h2,a:first-child h3,a:first-child h4,a:first-child h5,a:first-child h6{margin-top:0;padding-top:0}h1+p,h2+p,h3+p,h4+p,h5+p,h6+p,ul li>:first-child,ol li>:first-child{margin-top:0}dl{padding:0}dl dt{font-size:14px;font-weight:bold;font-style:italic;padding:0;margin:15px 0 5px}dl dt:first-child{padding:0}dl dt>:first-child{margin-top:0}dl dt>:last-child{margin-bottom:0}dl dd{margin:0 0 15px;padding:0 15px}dl dd>:first-child{margin-top:0}dl dd>:last-child{margin-bottom:0}blockquote{border-left:4px solid #DDD;padding:0 15px;color:#777}blockquote>:first-child{margin-top:0}blockquote>:last-child{margin-bottom:0}table{border-collapse:collapse;border-spacing:0;font-size:100%;font:inherit}table th{font-weight:bold;border:1px solid #ccc;padding:6px 13px}table td{border:1px solid #ccc;padding:6px 13px}table tr{border-top:1px solid #ccc;background-color:#fff}table tr:nth-child(2n){background-color:#f8f8f8}img{max-width:100%}code,tt{margin:0 2px;padding:0 5px;white-space:nowrap;border:1px solid #eaeaea;background-color:#f8f8f8;border-radius:3px;font-family:Consolas,'Liberation Mono',Courier,monospace;font-size:12px;color:#333}pre>code{margin:0;padding:0;white-space:pre;border:0;background:transparent}.highlight pre{background-color:#f8f8f8;border:1px solid #ccc;font-size:13px;line-height:19px;overflow:auto;padding:6px 10px;border-radius:3px}pre{background-color:#f8f8f8;border:1px solid #ccc;font-size:13px;line-height:19px;overflow:auto;padding:6px 10px;border-radius:3px}pre code,pre tt{background-color:transparent;border:0}.poetry pre{font-family:Georgia,Garamond,serif!important;font-style:italic;font-size:110%!important;line-height:1.6em;display:block;margin-left:1em}.poetry pre code{font-family:Georgia,Garamond,serif!important;word-break:break-all;word-break:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;white-space:pre-wrap}sup,sub,a.footnote{font-size:1.4ex;height:0;line-height:1;vertical-align:super;position:relative}sub{vertical-align:sub;top:-1px}@media print{body{background:#fff}img,pre,blockquote,table,figure{page-break-inside:avoid}body{background:#fff;border:0}code{background-color:#fff;color:#333!important;padding:0 .2em;border:1px solid #dedede}pre{background:#fff}pre code{background-color:white!important;overflow:visible}}@media screen{body.inverted{color:#eee!important;border-color:#555;box-shadow:none}.inverted body,.inverted hr .inverted p,.inverted td,.inverted li,.inverted h1,.inverted h2,.inverted h3,.inverted h4,.inverted h5,.inverted h6,.inverted th,.inverted .math,.inverted caption,.inverted dd,.inverted dt,.inverted blockquote{color:#eee!important;border-color:#555;box-shadow:none}.inverted td,.inverted th{background:#333}.inverted h2{border-color:#555}.inverted hr{border-color:#777;border-width:1px!important}::selection{background:rgba(157,193,200,0.5)}h1::selection{background-color:rgba(45,156,208,0.3)}h2::selection{background-color:rgba(90,182,224,0.3)}h3::selection,h4::selection,h5::selection,h6::selection,li::selection,ol::selection{background-color:rgba(133,201,232,0.3)}code::selection{background-color:rgba(0,0,0,0.7);color:#eee}code span::selection{background-color:rgba(0,0,0,0.7)!important;color:#eee!important}a::selection{background-color:rgba(255,230,102,0.2)}.inverted a::selection{background-color:rgba(255,230,102,0.6)}td::selection,th::selection,caption::selection{background-color:rgba(180,237,95,0.5)}.inverted{background:#0b2531;background:#252a2a}.inverted body{background:#252a2a}.inverted a{color:#acd1d5}}.highlight .c{color:#998;font-style:italic}.highlight .err{color:#a61717;background-color:#e3d2d2}.highlight .k,.highlight .o{font-weight:bold}.highlight .cm{color:#998;font-style:italic}.highlight .cp{color:#999;font-weight:bold}.highlight .c1{color:#998;font-style:italic}.highlight .cs{color:#999;font-weight:bold;font-style:italic}.highlight .gd{color:#000;background-color:#fdd}.highlight .gd .x{color:#000;background-color:#faa}.highlight .ge{font-style:italic}.highlight .gr{color:#a00}.highlight .gh{color:#999}.highlight .gi{color:#000;background-color:#dfd}.highlight .gi .x{color:#000;background-color:#afa}.highlight .go{color:#888}.highlight .gp{color:#555}.highlight .gs{font-weight:bold}.highlight .gu{color:#800080;font-weight:bold}.highlight .gt{color:#a00}.highlight .kc,.highlight .kd,.highlight .kn,.highlight .kp,.highlight .kr{font-weight:bold}.highlight .kt{color:#458;font-weight:bold}.highlight .m{color:#099}.highlight .s{color:#d14}.highlight .na{color:#008080}.highlight .nb{color:#0086b3}.highlight .nc{color:#458;font-weight:bold}.highlight .no{color:#008080}.highlight .ni{color:#800080}.highlight .ne,.highlight .nf{color:#900;font-weight:bold}.highlight .nn{color:#555}.highlight .nt{color:#000080}.highlight .nv{color:#008080}.highlight .ow{font-weight:bold}.highlight .w{color:#bbb}.highlight .mf,.highlight .mh,.highlight .mi,.highlight .mo{color:#099}.highlight .sb,.highlight .sc,.highlight .sd,.highlight .s2,.highlight .se,.highlight .sh,.highlight .si,.highlight .sx{color:#d14}.highlight .sr{color:#009926}.highlight .s1{color:#d14}.highlight .ss{color:#990073}.highlight .bp{color:#999}.highlight .vc,.highlight .vg,.highlight .vi{color:#008080}.highlight .il{color:#099}.highlight .gc{color:#999;background-color:#eaf2f5}.type-csharp .highlight .k,.type-csharp .highlight .kt{color:#00F}.type-csharp .highlight .nf{color:#000;font-weight:normal}.type-csharp .highlight .nc{color:#2b91af}.type-csharp .highlight .nn{color:#000}.type-csharp .highlight .s,.type-csharp .highlight .sc{color:#a31515}</style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<nav id="TOC">
+<ul>
+<li><a href="#通用">通用</a></li>
+<li><a href="#词条">词条</a></li>
+<li><a href="#书籍">书籍</a></li>
+<li><a href="#音乐">音乐</a></li>
+<li><a href="#文献">文献</a></li>
+<li><a href="#商城">商城</a></li>
+<li><a href="#设计">设计</a></li>
+<li><a href="#包搜索">包搜索</a></li>
+<li><a href="#macos-软件体验">MACOS 软件体验</a></li>
+<li><a href="#域名">域名</a></li>
+<li><a href="#代码项目">代码/项目</a></li>
+<li><a href="#其它">其它</a></li>
+<li><a href="#不支持-pc-搜索的网站">不支持 PC 搜索的网站</a></li>
+<li><a href="#alfred-workflow-支持-post-request-网页">Alfred Workflow 支持 POST Request 网页</a></li>
+</ul>
+</nav>
+<h1 align="center">
+门户即推荐，搜索即服务
+</h1>
+<ul>
+<li>减少页面加载一次</li>
+<li>减少推荐</li>
+<li>导入 Alfred 中获得语义书签</li>
+</ul>
+<p>将 <code>{query}</code> 替换为需要搜索的内容后键入浏览器即可。没有 <code>{query}</code> 说明该网页不支持 GET Request，需要打开网页后在表单处填写。</p>
+<p>点击 Alfred 列中内容可以自动导入（GFM 不支持 Scheme Url，进入<a href="https://zhengzangw.com/Portal2Search/">网页版</a>导入）。不支持 GET Request 网站见 <a href="#alfred-workflow-%e6%94%af%e6%8c%81-post-request-%e7%bd%91%e9%a1%b5">Alfred Workflow 支持 POST Request 网页</a></p>
+<h2 id="通用">通用</h2>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th>Alfred</th>
+<th>Url</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>微博</td>
+<td><a href="alfred://customsearch/Search%20Weibo%20for%20%27%7Bquery%7D%27/s/utf8/nospace/https%3A%2F%2Fs.weibo.com%2Fweibo%3Fq%3D%7Bquery%7D%26Refer%3Dindex">s</a></td>
+<td>https://s.weibo.com/weibo?q={query}&amp;Refer=index</td>
+</tr>
+<tr class="even">
+<td>百度</td>
+<td><a href="alfred://customsearch/Search%20Baidu%20for%20%27%7Bquery%7D%27/s/utf8/nospace/https%3A%2F%2Fwww.baidu.com%2Fs%3Fwd%3D%7Bquery%7D">s</a></td>
+<td>https://www.baidu.com/s?wd={query}</td>
+</tr>
+<tr class="odd">
+<td>知乎</td>
+<td><a href="alfred://customsearch/Search%20Zhihu%20for%20%27%7Bquery%7D%27/s/utf8/nospace/https%3A%2F%2Fwww.zhihu.com%2Fsearch%3Ftype%3Dcontent%26q%3D%7Bquery%7D">s</a></td>
+<td>https://www.zhihu.com/search?type=content&amp;q={query}</td>
+</tr>
+<tr class="even">
+<td>Quara</td>
+<td><a href="alfred://customsearch/Search%20Quora%20for%20%27%7Bquery%7D%27/s/utf8/nospace/https%3A%2F%2Fwww.quora.com%2Fsearch%3Fq%3D%7Bquery%7D">s</a></td>
+<td>https://www.quora.com/search?q={query}</td>
+</tr>
+<tr class="odd">
+<td>Google</td>
+<td>s</td>
+<td>https://www.google.com/search?q={query}</td>
+</tr>
+<tr class="even">
+<td>Bing</td>
+<td>s</td>
+<td>https://cn.bing.com/search?q={query}</td>
+</tr>
+<tr class="odd">
+<td>reddit</td>
+<td><a href="alfred://customsearch/Search%20reddit%20for%20%27%7Bquery%7D%27/forum/utf8/nospace/https%3A%2F%2Fwww.reddit.com%2Fsearch%2F%3Fq%3D%7Bquery%7D">forum</a></td>
+<td>https://www.reddit.com/search/?q={query}</td>
+</tr>
+</tbody>
+</table>
+<h2 id="词条">词条</h2>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th>Alfred</th>
+<th>Url</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>维基</td>
+<td>wiki</td>
+<td>https://zh.wikipedia.org/wiki/Special:Search/{query}</td>
+</tr>
+<tr class="even">
+<td>MBA 智库</td>
+<td><a href="alfred://customsearch/Search%20MAB%E6%99%BA%E5%BA%93%20for%20%27%7Bquery%7D%27/wiki/utf8/nospace/https%3A%2F%2Fwiki.mbalib.com%2Fwiki%2FSpecial%3ASearch%3Fsearch%3D%7Bquery%7D">wiki</a></td>
+<td>https://wiki.mbalib.com/wiki/Special:Search?search={query}</td>
+</tr>
+</tbody>
+</table>
+<h2 id="书籍">书籍</h2>
+<table>
+<colgroup>
+<col style="width: 3%"></col>
+<col style="width: 65%"></col>
+<col style="width: 30%"></col>
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Alfred</th>
+<th>Url</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Genesis 书库</td>
+<td><a href="alfred://customsearch/Search%20Library%20Genesis%20for%20Book%20%27%7Bquery%7D%27/book/utf8/nospace/http%3A%2F%2Fgen.lib.rus.ec%2Fsearch.php%3Freq%3D%7Bquery%7D%26open%3D0%26res%3D25%26view%3Dsimple%26phrase%3D1%26column%3Ddef">book</a></td>
+<td>http://gen.lib.rus.ec/search.php?req={query}&amp;open=0&amp;res=25&amp;view=simple&amp;phrase=1&amp;column=def</td>
+</tr>
+<tr class="even">
+<td>全国图书馆</td>
+<td><a href="alfred://customsearch/Search%20%E5%85%A8%E5%9B%BD%E5%9B%BE%E4%B9%A6%E9%A6%86%20for%20%27%7Bquery%7D%27/book/utf8/nospace/http%3A%2F%2Fbook.ucdrs.superlib.net%2Fsearch%3Fsw%3D%7Bquery%7D%26ecode%3Dutf-8%26channel%3Dsearch%26Field%3Dall">book</a></td>
+<td>http://book.ucdrs.superlib.net/search?sw=%E7%AE%97%E6%B3%95%E5%AF%BC%E8%AE%BA&amp;ecode=utf-8&amp;channel=search&amp;Field=all</td>
+</tr>
+<tr class="odd">
+<td>豆瓣读书</td>
+<td><a href="alfred://customsearch/Search%20%E8%B1%86%E7%93%A3%E8%AF%BB%E4%B9%A6%20for%20%27%7Bquery%7D%27/book/utf8/nospace/https%3A%2F%2Fsearch.douban.com%2Fbook%2Fsubject_search%3Fsearch_text%3D%7Bquery%7D">book</a></td>
+<td>https://search.douban.com/book/subject_search?search_text={query}</td>
+</tr>
+<tr class="even">
+<td>鸠摩搜书</td>
+<td>book</td>
+<td>https://www.jiumodiary.com/</td>
+</tr>
+<tr class="odd">
+<td>Pansoso</td>
+<td><a href="alfred://customsearch/Search%20%E7%9B%98%E6%90%9C%E6%90%9C%20for%20%27%7Bquery%7D%27/book/utf8/nospace/https%3A%2F%2Fwww.pansoso.com%2Fzh%2F%7Bquery%7D">book</a></td>
+<td>https://www.pansoso.com/zh/{query}</td>
+</tr>
+</tbody>
+</table>
+<h2 id="音乐">音乐</h2>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th>Alfred</th>
+<th>Url</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>网易云</td>
+<td><a href="alfred://customsearch/search%20Netease%20Music%20for%20%7Bquery%7D/music/utf8/nospace/https%3A%2F%2Fmusic.163.com%2F%23%2Fsearch%2Fm%2F%3Fs%3D%7Bquery%7D%26type%3D1">music</a></td>
+<td>https://music.163.com/#/search/m/?s={query}&amp;type=1</td>
+</tr>
+</tbody>
+</table>
+<h2 id="文献">文献</h2>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th>Alfred</th>
+<th>Url</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sci-hub</td>
+<td><a href="alfred://customsearch/Search%20essay%20of%20DOI%3A%20%27%7Bquery%7D%27%20on%20sci-hub/doi/utf8/nospace/https%3A%2F%2Fsci-hub.se%2F%7Bquery%7D">doi</a></td>
+<td>https://sci-hub.se/{query}</td>
+</tr>
+<tr class="even">
+<td>dx.doi.org</td>
+<td><a href="alfred://customsearch/Search%20essay%20of%20DOI%3A%20%7Bquery%7D/doi/utf8/nospace/http%3A%2F%2Fdx.doi.org%2F%7Bquery%7D">doi</a></td>
+<td>http://dx.doi.org/{query}</td>
+</tr>
+<tr class="odd">
+<td>Google Scholar</td>
+<td><a href="alfred://customsearch/Search%20Google%20Scholar%20for%20essay%20%27%7Bquery%7D%27/essay/utf8/nospace/https%3A%2F%2Fscholar.google.com%2Fscholar%3Fq%3D%7Bquery%7D">essay</a></td>
+<td>https://scholar.google.com/scholar?q={query}</td>
+</tr>
+<tr class="even">
+<td>谷歌学术镜像-1</td>
+<td><a href="alfred://customsearch/Search%20%E8%B0%B7%E6%AD%8C%E5%AD%A6%E6%9C%AF%E9%95%9C%E5%83%8F-1%20for%20essay%20%27%7Bquery%7D%27/essay/utf8/nospace/https%3A%2F%2Fs3.sci-hub.org.cn%2F%2Fscholar%3Fq%3D%7Bquery%7D">essay</a></td>
+<td>https://s3.sci-hub.org.cn//scholar?q={query}</td>
+</tr>
+<tr class="odd">
+<td>谷歌学术镜像-2</td>
+<td><a href="alfred://customsearch/Search%20%E8%B0%B7%E6%AD%8C%E5%AD%A6%E6%9C%AF%E9%95%9C%E5%83%8F-2%20for%20essay%20%27%7Bquery%7D%27/essay/utf8/nospace/https%3A%2F%2Fxueshu.123admin.com%2Fscholar%3Fq%3D%7Bquery%7D">essay</a></td>
+<td>https://xueshu.123admin.com/scholar?q={query}</td>
+</tr>
+<tr class="even">
+<td>CNKI</td>
+<td><a href="alfred://customsearch/Search%20CNKI%20for%20essay%20%27%7Bquery%7D%27/essay/utf8/nospace/http%3A%2F%2Fscholar.cnki.net%2Fresult.aspx%3Fq%3D%7Bquery%7D">essay</a></td>
+<td>http://scholar.cnki.net/result.aspx?q={query}</td>
+</tr>
+<tr class="odd">
+<td>维普</td>
+<td><a href="alfred://customsearch/Search%20%E7%BB%B4%E6%99%AE%20for%20essay%20%27%7Bquery%7D%27/essay/utf8/nospace/http%3A%2F%2Fwww.cqvip.com%2Fmain%2Fsearch.aspx%3Fk%3D%7Bquery%7D">essay</a></td>
+<td>http://www.cqvip.com/main/search.aspx?k={query}</td>
+</tr>
+</tbody>
+</table>
+<h2 id="商城">商城</h2>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th>Alfred</th>
+<th>Url</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>京东</td>
+<td><a href="alfred://customsearch/Buy%20%22%7Bquery%7D%22%20on%20%E4%BA%AC%E4%B8%9C/buy/utf8/nospace/https%3A%2F%2Fsearch.jd.com%2FSearch%3Fkeyword%3D%7Bquery%7D%26enc%3Dutf-8">buy</a></td>
+<td>https://search.jd.com/Search?keyword={query}&amp;enc=utf-8</td>
+</tr>
+<tr class="even">
+<td>淘宝</td>
+<td><a href="alfred://customsearch/Buy%20%22%7Bquery%7D%22%20on%20%E6%B7%98%E5%AE%9D/buy/utf8/nospace/https%3A%2F%2Fs.taobao.com%2Fsearch%3Fq%3D%7Bquery%7D">buy</a></td>
+<td>https://s.taobao.com/search?q={query}</td>
+</tr>
+<tr class="odd">
+<td>当当</td>
+<td><a href="alfred://customsearch/Buy%20%22%7Bquery%7D%22%20on%20%E5%BD%93%E5%BD%93/buy/utf8/nospace/http%3A%2F%2Fsearch.dangdang.com%2F%3Fkey%3D%7Bquery%7D%26act%3Dinput">buy</a></td>
+<td>http://search.dangdang.com/?key={query}&amp;act=input</td>
+</tr>
+<tr class="even">
+<td>阿里巴巴</td>
+<td><a href="alfred://customsearch/Buy%20%22%7Bquery%7D%22%20on%20%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4/buy/utf8/nospace/https%3A%2F%2Fs.1688.com%2Fselloffer%2Foffer_search.htm%3Fkeywords%3D%7Bquery%7D">buy</a></td>
+<td>https://s.1688.com/selloffer/offer_search.htm?keywords={query}</td>
+</tr>
+<tr class="odd">
+<td>苏宁</td>
+<td><a href="alfred://customsearch/Buy%20%22%7Bquery%7D%22%20on%20%E8%8B%8F%E5%AE%81/buy/utf8/nospace/https%3A%2F%2Fsearch.suning.com%2F%7Bquery%7D%2F">buy</a></td>
+<td>https://search.suning.com/{query}/</td>
+</tr>
+<tr class="even">
+<td>Amazon</td>
+<td><a href="alfred://customsearch/Buy%20%22%7Bquery%7D%22%20on%20Amazon/buy/utf8/nospace/https%3A%2F%2Fwww.amazon.com%2Fs%3Fk%3D%7Bquery%7D">buy</a></td>
+<td>https://www.amazon.com/s?k={query}</td>
+</tr>
+<tr class="odd">
+<td>Amazon(海外购)</td>
+<td><a href="alfred://customsearch/Buy%20%22%7Bquery%7D%22%20on%20%E4%BA%9A%E9%A9%AC%E9%80%8A%E6%B5%B7%E5%A4%96%E8%B4%AD/buy/utf8/nospace/https%3A%2F%2Fwww.amazon.cn%2Fs%3Fk%3D%7Bquery%7D">buy</a></td>
+<td>https://www.amazon.cn/s?k={query}</td>
+</tr>
+<tr class="even">
+<td>考拉海购</td>
+<td><a href="alfred://customsearch/Buy%20%22%7Bquery%7D%22%20on%20%E8%80%83%E6%8B%89%E6%B5%B7%E8%B4%AD/buy/utf8/nospace/https%3A%2F%2Fsearch.kaola.com%2Fsearch.html%3Fkey%3D%7Bquery%7D">buy</a></td>
+<td>https://search.kaola.com/search.html?key={query}</td>
+</tr>
+<tr class="odd">
+<td>网易严选</td>
+<td><a href="alfred://customsearch/Buy%20%22%7Bquery%7D%22%20on%20%E7%BD%91%E6%98%93%E4%B8%A5%E9%80%89/buy/utf8/nospace/http%3A%2F%2Fyou.163.com%2Fsearch%3Fkeyword%3D%7Bquery%7D">buy</a></td>
+<td>http://you.163.com/search?keyword={query}</td>
+</tr>
+</tbody>
+</table>
+<h2 id="设计">设计</h2>
+<table>
+<colgroup>
+<col style="width: 4%"></col>
+<col style="width: 75%"></col>
+<col style="width: 20%"></col>
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Alfred</th>
+<th>Url</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>阿里巴巴矢量库</td>
+<td><a href="alfred://customsearch/Search%20%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4%E7%9F%A2%E9%87%8F%E5%BA%93%20for%20%27%7Bquery%7D%27/icon/utf8/nospace/https%3A%2F%2Fwww.iconfont.cn%2Fsearch%2Findex%3FsearchType%3Dicon%26q%3D%7Bquery%7D">icon</a></td>
+<td>https://www.iconfont.cn/search/index?searchType=icon&amp;q={query}</td>
+</tr>
+<tr class="even">
+<td>easyicon</td>
+<td><a href="alfred://customsearch/Search%20easyicon%20for%20%27%7Bquery%7D%27/icon/utf8/nospace/https%3A%2F%2Fwww.easyicon.net%2Flanguage.en%2Ficonsearch%2F%7Bquery%7D">icon</a></td>
+<td>https://www.easyicon.net/language.en/iconsearch/{query}</td>
+</tr>
+<tr class="odd">
+<td>千图网</td>
+<td>icon</td>
+<td>https://588ku.com/</td>
+</tr>
+<tr class="even">
+<td>Google Image</td>
+<td><a href="alfred://customsearch/Search%20google%20for%20%27%7Bquery%7D%27/image/utf8/nospace/https%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3D%7Bquery%7D%26tbm%3Disch">image</a></td>
+<td>https://www.google.com/search?q={query}&amp;tbm=isch</td>
+</tr>
+<tr class="odd">
+<td>unsplash Image</td>
+<td><a href="alfred://customsearch/Search%20unsplash%20for%20%27%7Bquery%7D%27/image/utf8/nospace/https%3A%2F%2Funsplash.com%2Fsearch%2Fphotos%2F%7Bquery%7D">image</a></td>
+<td>https://unsplash.com/search/photos/{query}</td>
+</tr>
+<tr class="even">
+<td>站长之家</td>
+<td><a href="alfred://customsearch/Search%20%E7%AB%99%E9%95%BF%E4%B9%8B%E5%AE%B6%20for%20%27%7Bquery%7D%27/template/utf8/nospace/http%3A%2F%2Faspx.sc.chinaz.com%2Fquery.aspx%3Fkeyword%3D%7Bquery%7D">template</a></td>
+<td>http://aspx.sc.chinaz.com/query.aspx?keyword={query}</td>
+</tr>
+</tbody>
+</table>
+<h2 id="包搜索">包搜索</h2>
+<table>
+<colgroup>
+<col style="width: 6%"></col>
+<col style="width: 68%"></col>
+<col style="width: 24%"></col>
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Alfred</th>
+<th>Url</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Docker 镜像</td>
+<td><a href="alfred://customsearch/Search%20hub.docker.com%20for%20Image%20%27%7Bquery%7D%27/docker/utf8/nospace/https%3A%2F%2Fhub.docker.com%2Fsearch%3Fq%3D%7Bquery%7D%26type%3Dimage">docker</a></td>
+<td>https://hub.docker.com/search?q={query}&amp;type=image</td>
+</tr>
+<tr class="even">
+<td>Npm 包</td>
+<td><a href="alfred://customsearch/Search%20npm%20for%20package%20%27%7Bquery%7D%27/npm/utf8/nospace/https%3A%2F%2Fwww.npmjs.com%2Fsearch%3Fq%3D%7Bquery%7D">npm</a></td>
+<td>https://www.npmjs.com/search?q={query}</td>
+</tr>
+<tr class="odd">
+<td>Composer 包</td>
+<td><a href="alfred://customsearch/Search%20PHP%20package%20%27%7Bquery%7D%27/composer/utf8/nospace/https%3A%2F%2Fpackagist.org%2Fsearch%2F%3Fsearch_query%255Bquery%255D%3D%7Bquery%7D">composer</a></td>
+<td>https://packagist.org/search/?search_query%5Bquery%5D={query}</td>
+</tr>
+<tr class="even">
+<td>Python 包</td>
+<td><a href="alfred://customsearch/Search%20PyPI%20for%20python%20package/pip/utf8/nospace/https%3A%2F%2Fpypi.org%2Fsearch%2F%3Fq%3D%7Bquery%7D">pip</a></td>
+<td>https://pypi.org/search/?q={query}</td>
+</tr>
+<tr class="odd">
+<td>Linux deb/rpm</td>
+<td><a href="alfred://customsearch/Search%20Linux%20Package%20%27%7Bquery%7D%27/apt/utf8/nospace/https%3A%2F%2Fpkgs.org%2Fsearch%2F%3Fq%3D%7Bquery%7D">apt</a></td>
+<td>https://pkgs.org/search/?q={query}</td>
+</tr>
+<tr class="even">
+<td>Google 插件</td>
+<td><a href="alfred://customsearch/Search%20chrome%20plugin%20for%20%27%7Bquery%7D%27/plugin/utf8/nospace/https%3A%2F%2Fchrome.google.com%2Fwebstore%2Fsearch%2F%7Bquery%7D%3Fhl%3Dzh-CN">chrome</a></td>
+<td>https://chrome.google.com/webstore/search/{query}?hl=zh-CN</td>
+</tr>
+<tr class="odd">
+<td>stylish</td>
+<td><a href="talfred://customsearch/Search%20userstyles%20for%20%27%7Bquery%7D%27/stylish/utf8/nospace/https%3A%2F%2Fuserstyles.org%2Fstyles%2Fbrowse%3Fsearch_terms%3D%7Bquery%7D%26type%3Dfalse">stylish</a></td>
+<td>https://userstyles.org/styles/browse?search_terms={query}&amp;type=false</td>
+</tr>
+<tr class="even">
+<td>Greasy Fork（油猴）</td>
+<td><a href="alfred://customsearch/Search%20Greasy%20Fork%20for%20%27%7Bquery%7D%27/greasy/utf8/nospace/https%3A%2F%2Fgreasyfork.org%2Fzh-CN%2Fscripts%3Futf8%3D%25E2%259C%2593%26q%3D%7Bquery%7D">greasy</a></td>
+<td>https://greasyfork.org/zh-CN/scripts?utf8=%E2%9C%93&amp;q={query}</td>
+</tr>
+</tbody>
+</table>
+<h2 id="macos-软件体验">MACOS 软件体验</h2>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th>Alfred</th>
+<th>Url</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Xclient</td>
+<td><a href="alfred://customsearch/Search%20Xclient%20for%20%27%7Bquery%7D%27/app/utf8/nospace/https%3A%2F%2Fxclient.info%2Fsearch%2Fs%2F%7Bquery%7D">app</a></td>
+<td>https://xclient.info/search/s/{query}</td>
+</tr>
+<tr class="even">
+<td>orsoon</td>
+<td><a href="alfred://customsearch/Search%20orsoon.com%20for%20%27%7Bquery%7D%27/app/utf8/nospace/https%3A%2F%2Fs.orsoon.com%2Fsearch%3Fk%3D%7Bquery%7D">app</a></td>
+<td>https://s.orsoon.com/search?k={query}</td>
+</tr>
+</tbody>
+</table>
+<h2 id="域名">域名</h2>
+<table>
+<colgroup>
+<col style="width: 3%"></col>
+<col style="width: 69%"></col>
+<col style="width: 27%"></col>
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Alfred</th>
+<th>Url</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>whois</td>
+<td><a href="alfred://customsearch/whois%20%27%7Bquery%7D%27/domain/utf8/nospace/http%3A%2F%2Fwhois.chinaz.com%2F%7Bquery%7D">domain</a></td>
+<td>http://whois.chinaz.com/{query}</td>
+</tr>
+<tr class="even">
+<td>Alicloud</td>
+<td><a href="alfred://customsearch/Buy%20domain%20%27%7Bquery%7D%27%20on%20AliCloud/domain/utf8/nospace/https%3A%2F%2Fwww.alibabacloud.com%2Ftc%2Fdomain%2Fsearch%3Fkeyword%3D%7Bquery%7D">domain</a></td>
+<td>https://www.alibabacloud.com/tc/domain/search?keyword={query}</td>
+</tr>
+<tr class="odd">
+<td>Godaddy</td>
+<td><a href="alfred://customsearch/Buy%20domain%20%27%7Bquery%7D%27%20on%20Goddy/domain/utf8/nospace/https%3A%2F%2Fsg.godaddy.com%2Fdomainsearch%2Ffind%3FcheckAvail%3D1%26tmskey%3D%26domainToCheck%3D%7Bquery%7D">domain</a></td>
+<td>https://sg.godaddy.com/domainsearch/find?checkAvail=1&amp;tmskey=&amp;domainToCheck={query}</td>
+</tr>
+<tr class="even">
+<td>Namecheap</td>
+<td><a href="alfred://customsearch/Buy%20domain%20%27%7Bquery%7D%27%20on%20namecheap/domain/utf8/nospace/https%3A%2F%2Fwww.namecheap.com%2Fdomains%2Fregistration%2Fresults.aspx%3Fdomain%3D%7Bquery%7D">domain</a></td>
+<td>https://www.namecheap.com/domains/registration/results.aspx?domain={query}</td>
+</tr>
+</tbody>
+</table>
+<h2 id="代码项目">代码/项目</h2>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th>Alfred</th>
+<th>Url</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Github</td>
+<td><a href="alfred://customsearch/Search%20Github%20for%20code%20%27%7Bquery%7D%27/code/utf8/nospace/https%3A%2F%2Fgithub.com%2Fsearch%3Fq%3D%7Bquery%7D">code</a></td>
+<td>https://github.com/search?q={query}</td>
+</tr>
+</tbody>
+</table>
+<h2 id="其它">其它</h2>
+<table>
+<colgroup>
+<col style="width: 4%"></col>
+<col style="width: 66%"></col>
+<col style="width: 29%"></col>
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Alfred</th>
+<th>Url</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>国标</td>
+<td><a href="alfred://customsearch/Search%20%E5%9B%BD%E6%A0%87%20%27%7Bquery%7D%27/gb/utf8/nospace/http%3A%2F%2Fopenstd.samr.gov.cn%2Fbzgk%2Fgb%2Fstd_list%3Fp.p1%3D0%26p.p90%3Dcirculation_date%26p.p91%3Ddesc%26p.p2%3D%7Bquery%7D">gb</a></td>
+<td>http://openstd.samr.gov.cn/bzgk/gb/std_list?p.p1=0&amp;p.p90=circulation_date&amp;p.p91=desc&amp;p.p2={query}</td>
+</tr>
+<tr class="even">
+<td>Github</td>
+<td><a href="alfred://customsearch/Search%20Github%20for%20code%20%27%7Bquery%7D%27/code/utf8/nospace/https%3A%2F%2Fgithub.com%2Fsearch%3Fq%3D%7Bquery%7D">code</a></td>
+<td>https://github.com/search?q={query}</td>
+</tr>
+<tr class="odd">
+<td>天眼查（查人）</td>
+<td><a href="alfred://customsearch/Search%20%E5%A4%A9%E7%9C%BC%E6%9F%A5%20for%20People%20%27%7Bquery%7D%27/tyc/utf8/nospace/https%3A%2F%2Fwww.tianyancha.com%2Fhumansearch%2F%7Bquery%7D">tyc</a></td>
+<td>https://www.tianyancha.com/humansearch/{query}</td>
+</tr>
+<tr class="even">
+<td>天眼查（查公司）</td>
+<td><a href="alfred://customsearch/Search%20%E5%A4%A9%E7%9C%BC%E6%9F%A5%20for%20Company%20%27%7Bquery%7D%27/tyc/utf8/nospace/https%3A%2F%2Fwww.tianyancha.com%2Fsearch%3Fkey%3D%7Bquery%7D">tyc</a></td>
+<td>https://www.tianyancha.com/search?key={query}</td>
+</tr>
+<tr class="odd">
+<td>英语缩写查询</td>
+<td><a href="alfred://customsearch/Search%20the%20definition%20for%20Acronym%20%27%7Bquery%7D%27/abbr/utf8/nospace/https%3A%2F%2Fwww.acronymfinder.com%2F%7Bquery%7D.html">abbr</a></td>
+<td>https://www.acronymfinder.com/{query}.html</td>
+</tr>
+<tr class="even">
+<td>OEIS 查询</td>
+<td><a href="alfred://customsearch/Search%20OEIS%20for%20%27%7Bquery%7D%27/oeis/utf8/nospace/http%3A%2F%2Foeis.org%2Fsearch%3Fq%3D%7Bquery%7D">oeis</a></td>
+<td>http://oeis.org/search?q={query}</td>
+</tr>
+</tbody>
+</table>
+<h2 id="不支持-pc-搜索的网站">不支持 PC 搜索的网站</h2>
+<ul>
+<li>闲鱼</li>
+</ul>
+<h2 id="alfred-workflow-支持-post-request-网页">Alfred Workflow 支持 POST Request 网页</h2>
+<p>仿照已有的 Workflow ，根据提示可以建立新的网页</p>
+<p>导入 Workflow 后，需要修改使用的默认浏览器类型（默认为 Chrome）。同时，要在 Safari/Chrome 的 Develop 菜单中勾选 Allow Javascript from Apple Events。</p>
+<p>如果网速不好，可以试着调节 Workflow 中等待时间。</p>
+</body>
+</html>

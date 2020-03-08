@@ -1,4 +1,4 @@
-<h2 align="center"> 门户即推荐，搜索即服务 </h2>
+<h1 align="center"> 门户即推荐，搜索即服务 </h1>
 
 - 减少页面加载一次
 - 减少推荐
@@ -93,7 +93,7 @@
 | stylish             | [stylish](talfred://customsearch/Search%20userstyles%20for%20%27%7Bquery%7D%27/stylish/utf8/nospace/https%3A%2F%2Fuserstyles.org%2Fstyles%2Fbrowse%3Fsearch_terms%3D%7Bquery%7D%26type%3Dfalse) | https://userstyles.org/styles/browse?search_terms={query}&type=false |
 | Greasy Fork（油猴） | [greasy](alfred://customsearch/Search%20Greasy%20Fork%20for%20%27%7Bquery%7D%27/greasy/utf8/nospace/https%3A%2F%2Fgreasyfork.org%2Fzh-CN%2Fscripts%3Futf8%3D%25E2%259C%2593%26q%3D%7Bquery%7D)  | https://greasyfork.org/zh-CN/scripts?utf8=%E2%9C%93&q={query}        |
 
-## MACOS 软件体验
+## MacOS 软件体验
 
 |         | Alfred                                                                                                                                            | Url                                   |
 | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------- |
