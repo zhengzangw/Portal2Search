@@ -1,8 +1,16 @@
 <h1 align="center"> 门户即推荐，搜索即服务 </h1>
 
+收录原因：
+
 - 减少页面加载一次
 - 减少推荐
 - 导入 Alfred 中获得语义书签
+
+收录准则：满足一下一条或多条
+
+- 在某资源领域占据大份额/大影响力
+- 提供异质于与其它网站的资源
+- 良好的口碑/用户体验
 
 将 `{query}` 替换为需要搜索的内容后键入浏览器即可。没有 `{query}` 说明该网页不支持 GET Request，需要打开网页后在表单处填写。
 
@@ -29,19 +37,27 @@
 
 ## 书籍
 
-|              | Alfred                                                                                                                                                                                                                                             | Url                                                                                                                |
-| ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| Genesis 书库 | [book](alfred://customsearch/Search%20Library%20Genesis%20for%20Book%20%27%7Bquery%7D%27/book/utf8/nospace/http%3A%2F%2Fgen.lib.rus.ec%2Fsearch.php%3Freq%3D%7Bquery%7D%26open%3D0%26res%3D25%26view%3Dsimple%26phrase%3D1%26column%3Ddef)         | http://gen.lib.rus.ec/search.php?req={query}&open=0&res=25&view=simple&phrase=1&column=def                         |
-| 全国图书馆   | [book](alfred://customsearch/Search%20%E5%85%A8%E5%9B%BD%E5%9B%BE%E4%B9%A6%E9%A6%86%20for%20%27%7Bquery%7D%27/book/utf8/nospace/http%3A%2F%2Fbook.ucdrs.superlib.net%2Fsearch%3Fsw%3D%7Bquery%7D%26ecode%3Dutf-8%26channel%3Dsearch%26Field%3Dall) | http://book.ucdrs.superlib.net/search?sw=%E7%AE%97%E6%B3%95%E5%AF%BC%E8%AE%BA&ecode=utf-8&channel=search&Field=all |
-| 豆瓣读书     | [book](alfred://customsearch/Search%20%E8%B1%86%E7%93%A3%E8%AF%BB%E4%B9%A6%20for%20%27%7Bquery%7D%27/book/utf8/nospace/https%3A%2F%2Fsearch.douban.com%2Fbook%2Fsubject_search%3Fsearch_text%3D%7Bquery%7D)                                        | https://search.douban.com/book/subject_search?search_text={query}                                                  |
-| 鸠摩搜书     | book                                                                                                                                                                                                                                               | https://www.jiumodiary.com/                                                                                        |
-| Pansoso      | [book](alfred://customsearch/Search%20%E7%9B%98%E6%90%9C%E6%90%9C%20for%20%27%7Bquery%7D%27/book/utf8/nospace/https%3A%2F%2Fwww.pansoso.com%2Fzh%2F%7Bquery%7D)                                                                                    | https://www.pansoso.com/zh/{query}                                                                                 |
+|              | Alfred                                                                                                                                                                                                                                             | Url                                                                                        |
+| ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| Genesis 书库 | [book](alfred://customsearch/Search%20Library%20Genesis%20for%20Book%20%27%7Bquery%7D%27/book/utf8/nospace/http%3A%2F%2Fgen.lib.rus.ec%2Fsearch.php%3Freq%3D%7Bquery%7D%26open%3D0%26res%3D25%26view%3Dsimple%26phrase%3D1%26column%3Ddef)         | http://gen.lib.rus.ec/search.php?req={query}&open=0&res=25&view=simple&phrase=1&column=def |
+| 全国图书馆   | [book](alfred://customsearch/Search%20%E5%85%A8%E5%9B%BD%E5%9B%BE%E4%B9%A6%E9%A6%86%20for%20%27%7Bquery%7D%27/book/utf8/nospace/http%3A%2F%2Fbook.ucdrs.superlib.net%2Fsearch%3Fsw%3D%7Bquery%7D%26ecode%3Dutf-8%26channel%3Dsearch%26Field%3Dall) | http://book.ucdrs.superlib.net/search?sw={query}&ecode=utf-8&channel=search&Field=all      |
+| 豆瓣读书     | [book](alfred://customsearch/Search%20%E8%B1%86%E7%93%A3%E8%AF%BB%E4%B9%A6%20for%20%27%7Bquery%7D%27/book/utf8/nospace/https%3A%2F%2Fsearch.douban.com%2Fbook%2Fsubject_search%3Fsearch_text%3D%7Bquery%7D)                                        | https://search.douban.com/book/subject_search?search_text={query}                          |
+| 鸠摩搜书     | book                                                                                                                                                                                                                                               | https://www.jiumodiary.com/                                                                |
+| Pansoso      | [book](alfred://customsearch/Search%20%E7%9B%98%E6%90%9C%E6%90%9C%20for%20%27%7Bquery%7D%27/book/utf8/nospace/https%3A%2F%2Fwww.pansoso.com%2Fzh%2F%7Bquery%7D)                                                                                    | https://www.pansoso.com/zh/{query}                                                         |
 
 ## 音乐
 
 |        | Alfred                                                                                                                                                                        | Url                                                |
 | ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- |
 | 网易云 | [music](alfred://customsearch/search%20Netease%20Music%20for%20%7Bquery%7D/music/utf8/nospace/https%3A%2F%2Fmusic.163.com%2F%23%2Fsearch%2Fm%2F%3Fs%3D%7Bquery%7D%26type%3D1) | https://music.163.com/#/search/m/?s={query}&type=1 |
+
+## 视频
+
+|          | Alfred                                                                                                                                                                       | Url                                             |
+| -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- |
+| Bilibili | [video](alfred://customsearch/Search%20BiliBili%20for%20video%20%27%7Bquery%7D%27/video/utf8/nospace/https%3A%2F%2Fsearch.bilibili.com%2Fall%3Fkeyword%3D%7Bquery%7D)        | https://search.bilibili.com/all?keyword={query} |
+| 爱奇艺   | [video](alfred://customsearch/Search%20%E7%88%B1%E5%A5%87%E8%89%BA%20for%20video%20%27%7Bquery%7D%27/video/utf8/nospace/https%3A%2F%2Fso.iqiyi.com%2Fso%2Fq_%7Bquery%7D)     | https://so.iqiyi.com/so/q_{query}               |
+| 腾讯视频 | [video](alfred://customsearch/Search%20%E8%85%BE%E8%AE%AF%E8%A7%86%E9%A2%91%20for%20%7Bquery%7D/video/utf8/nospace/https%3A%2F%2Fv.qq.com%2Fx%2Fsearch%2F%3Fq%3D%7Bquery%7D) | https://v.qq.com/x/search/?q={query}            |
 
 ## 文献
 
