@@ -14,7 +14,7 @@
 
 将 `{query}` 替换为需要搜索的内容后键入浏览器即可。没有 `{query}` 说明该网页不支持 GET Request，需要打开网页后在表单处填写。
 
-点击 Alfred 列中内容可以自动导入（GFM 不支持 Scheme Url，进入[网页版](https://zhengzangw.com/Portal2Search/)导入）。不支持 GET Request 网站见 [Alfred Workflow 支持 POST Request 网页](#alfred-workflow-%e6%94%af%e6%8c%81-post-request-%e7%bd%91%e9%a1%b5)
+点击 Alfred 列中内容可以自动导入（GFM 不支持 Scheme Url，进入[网页版](https://zhengzangw.com/Portal2Search)导入）。不支持 GET Request 网站见 [Alfred Workflow 支持 POST Request 网页](#alfred-workflow-%e6%94%af%e6%8c%81-post-request-%e7%bd%91%e9%a1%b5)
 
 ## 通用
 
